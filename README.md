@@ -38,7 +38,7 @@ This project is part of **COMP3133 – Lab Test 2**. It displays a list of Space
 ## 🔗 Live Demo
 
 🌐 **Hosted on Vercel**:  
-[https://comp3133-lab-test2-spacex.vercel.app](https://comp3133-lab-test2-spacex.vercel.app)
+[https://101413399-lab-test2-comp3133.vercel.app/](https://101413399-lab-test2-comp3133.vercel.app/)
 
 ---
 
