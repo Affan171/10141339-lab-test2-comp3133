@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "101410311-lab-test2-comp3133": {
+    "101413399-lab-test2-comp3133": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/101410311-lab-test2-comp3133",
+            "outputPath": "dist/101413399-lab-test2-comp3133",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": ["zone.js"],
@@ -63,10 +63,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "101410311-lab-test2-comp3133:build:production"
+              "buildTarget": "101413399-lab-test2-comp3133:build:production"
             },
             "development": {
-              "buildTarget": "101410311-lab-test2-comp3133:build:development"
+              "buildTarget": "101413399-lab-test2-comp3133:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -74,7 +74,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "101410311-lab-test2-comp3133:build"
+            "buildTarget": "101413399-lab-test2-comp3133:build"
           }
         },
         "test": {
