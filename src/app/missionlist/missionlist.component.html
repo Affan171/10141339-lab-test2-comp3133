@@ -1,0 +1,37 @@
+<input type="text" (input)="onSearch($event)" placeholder="Search by year" />
+
+<div class="filter-panel">
+  <h3>Launch Date</h3>
+  <div class="filter-buttons">
+    <button *ngFor="let year of years" (click)="setYearFilter(year)" [class.active]="yearFilter === year">{{ year }}</button>
+  </div>
+
+  <h3>Successful Launch</h3>
+  <div class="filter-buttons">
+    <button (click)="setLaunchSuccessFilter('true')" [class.active]="launchSuccess === 'true'">True</button>
+    <button (click)="setLaunchSuccessFilter('false')" [class.active]="launchSuccess === 'false'">False</button>
+  </div>
+
+  <h3>Successful Landing</h3>
+  <div class="filter-buttons">
+    <button (click)="setLandSuccessFilter('true')" [class.active]="landSuccess === 'true'">True</button>
+    <button (click)="setLandSuccessFilter('false')" [class.active]="landSuccess === 'false'">False</button>
+  </div>
+
+  <button (click)="resetFilters()">Reset Filters</button>
+</div>
+
+<div class="flightName" style="margin-left: 22%;">
+  <div *ngIf="data.length === 0">
+    <p>No data is available</p>
+  </div>
+
+  <div *ngFor="let flight of data; trackBy: trackByFlightId" class="flightdataBox">
+    <a [routerLink]="['/detail', flight.flight_number]">
+      <img [src]="flight.links.mission_patch_small" />
+      <h3>Mission Name : {{ flight.mission_name }}</h3>
+      <h4>Launch Year : {{ flight.launch_year }}</h4>
+      <h4>Successful Launch : {{ flight.launch_success ? 'Yes' : 'No' }}</h4>
+    </a>
+  </div>
+</div>
