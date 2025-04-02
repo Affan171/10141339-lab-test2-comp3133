@@ -1,27 +1,57 @@
-# 101410311LabTest2Comp3133
+# 🚀 Angular SpaceX Missions App - Lab Test 2 (COMP3133)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.1.
+This project is part of **COMP3133 – Lab Test 2**. It displays a list of SpaceX launches using the SpaceX REST API and includes filtering and detailed views using Angular.
 
-## Development server
+## 👨‍💻 Student Info
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Student ID**: 101413399  
+- **Course**: COMP3133  
+- **Lab Test**: 2  
+- **Project Name**: `101413399-lab-test2-comp3133`
 
-## Code scaffolding
+---
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 🔧 Features
 
-## Build
+### ✅ Mission List
+- Displays all SpaceX launches
+- Shows:
+  - Flight number
+  - Mission name
+  - Launch year
+  - Details
+  - Rocket name and type
+  - Patch image
+  - Article, Wikipedia, and Video links
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### ✅ Mission Filter
+- Allows filtering missions by launch year using a search input
 
-## Running unit tests
+### ✅ Mission Details
+- Clicking a mission opens a detailed view using route parameters
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### ✅ Angular Material UI
+- App uses Angular Material for modern UI components
 
-## Running end-to-end tests
+---
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## 🔗 Live Demo
 
-## Further help
+🌐 **Hosted on Vercel**:  
+[https://comp3133-lab-test2-spacex.vercel.app](https://comp3133-lab-test2-spacex.vercel.app)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js and npm
+- Angular CLI
+
+### Installation
+
+```bash
+git clone https://github.com/Affan171/101413399-lab-test2-comp3133.git
+cd 101413399-lab-test2-comp3133
+npm install
